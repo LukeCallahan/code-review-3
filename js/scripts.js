@@ -2,11 +2,18 @@
 
 //Business Logic
 function wordReplacer(number){
-  let stringArray = number.split("");
-  for (let i=0; i < stringArray.length; i += 1){
-    stringArray[i] = parseInt(stringArray[i]);
-  };
+  let inputNumber = parseInt(number);
+  let stringArray = []; 
+  let arrayElement = 0;
 
+  
+  for (let i=-1; i < inputNumber; i += 1){
+    arrayElement += 1;
+    stringArray[i] = arrayElement;
+    console.log(stringArray[i]);
+  };
+  
+  stringArray = number.split("");
   for (let i = 0; i < stringArray.length; i += 1){
     if (stringArray[i] === 3){
       stringArray[i] = "Won't you be my neighbor?";

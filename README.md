@@ -38,3 +38,11 @@ Expected Output: [2, "boop"]
 Test: "It should cycle through each element of the array and replace any 1's with "beep".
 Code: wordReplacer("13");
 Expected Output: [1, "beep"]
+
+
+Test: "It should take the number and modify the array so it include 0 through the input number".
+Code: wordReplacer("9");
+Expected Output: [0,1,2,3,4,5,6,7,8,9]
+
+
+so if 9 is my number, I want to make 9 my array length, start at zero and increment by 1. 
