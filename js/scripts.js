@@ -17,9 +17,8 @@ function wordReplacer(number){
     } else if (stringArray[i].toString().includes("1")){
       stringArray[i] = '"Beep!"';
     }
-    console.log(stringArray[i]);
   };
-
+  
   return stringArray;
 }
 
@@ -29,18 +28,16 @@ window.addEventListener("load", function(){
   let result = document.getElementById("results");
 
   form.addEventListener("submit", function(event){
-    event.preventDefault();
-    
     const number = document.getElementById("text-input1").value;
     let test = wordReplacer(number).join(', ');
     let p = document.getElementById("first");
     let text = document.createTextNode(test);
     let divTag = document.getElementById("results");
     
+    event.preventDefault();
     p.textContent ='';
     p.appendChild(text);
     divTag.appendChild(p);
     form.reset();
-    
   });
 });
