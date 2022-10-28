@@ -11,7 +11,9 @@ function wordReplacer(number){
     if (stringArray[i] === 3){
       stringArray[i] = "Won't you be my neighbor?";
     } else if (stringArray[i] === 2){
-      stringArray[i] = "boop";
+      stringArray[i] = "Boop";
+    } else if (stringArray[i] === 1){
+      stringArray[i] = "Beep";
     }
   };
   return stringArray;
