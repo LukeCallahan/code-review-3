@@ -42,9 +42,11 @@ window.addEventListener("load", function(){
     let div = document.createElement("div");
     let p = document.createElement("p");
     let text = document.createTextNode(test);
+
     p.appendChild(text);
     let divTag = document.getElementById("results");
     divTag.appendChild(p);
+    form.reset();
     
   });
 });
