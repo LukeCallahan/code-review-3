@@ -10,6 +10,8 @@ function wordReplacer(number){
   for (let i = 0; i < stringArray.length; i += 1){
     if (stringArray[i] === 3){
       stringArray[i] = "Won't you be my neighbor?";
+    } else if (stringArray[i] === 2){
+      stringArray[i] = "boop";
     }
   };
   return stringArray;
