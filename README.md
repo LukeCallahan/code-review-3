@@ -33,4 +33,8 @@ Expected Output: [1, Won't you be my neighbor]
 
 Test: "It should cycle through each element of the array and replace any 2's with "boop".
 Code: wordReplacer("13");
-Expected Output: [1, Won't you be my neighbor]
+Expected Output: [2, "boop"]
+
+Test: "It should cycle through each element of the array and replace any 1's with "beep".
+Code: wordReplacer("13");
+Expected Output: [1, "beep"]
