@@ -3,10 +3,10 @@
 //Business Logic
 function wordReplacer(number){
   let inputNumber = parseInt(number);
-  let stringArray = [0]; 
+  let stringArray = []; 
   let arrayElement = 0;
 
-  for (let i=1; i < inputNumber + 2; i += 1){
+  for (let i = 1; i < inputNumber + 2; i += 1){
     arrayElement += 1;
     stringArray[i] = arrayElement -1;
   };
