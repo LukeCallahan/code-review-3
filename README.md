@@ -3,7 +3,7 @@
 
 ** Begin Testing 
 
-2. Create an array and Convert the string to individual elements of the array.
+2. [complete] Create an array and Convert the string to individual elements of the array.
 
 3. Cycle through each element of the array, and if it has a 1, 2, or 3, do the following:
  If it has a 3, replace it with: "Won't you be my neighbor"
@@ -27,4 +27,6 @@ Test: "It should create an array and convert the inputted string into elements o
 Code: wordReplacer("14");
 Expected Output: [1, 4]
 
-Test: "It should..." // this is the start of 2nd test for beepBoop()
+Test: "It should cycle through each element of the array and display each element on a new line."
+Code: wordReplacer("14");
+Expected Output: [1, <br> 4]
