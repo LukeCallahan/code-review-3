@@ -45,4 +45,6 @@ Code: wordReplacer("9");
 Expected Output: [0,1,2,3,4,5,6,7,8,9]
 
 
-so if 9 is my number, I want to make 9 my array length, start at zero and increment by 1. 
+Test: "It should display each element of the array to the console.".
+Code: wordReplacer(14);
+Expected Output: 0, "Beep", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep!"
