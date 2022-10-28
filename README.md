@@ -27,6 +27,10 @@ Test: "It should create an array and convert the inputted string into elements o
 Code: wordReplacer("14");
 Expected Output: [1, 4]
 
-Test: "It should cycle through each element of the array and display any 3's with "Won't you be my neighbor".
+Test: "It should cycle through each element of the array and replace any 3's with "Won't you be my neighbor".
+Code: wordReplacer("13");
+Expected Output: [1, Won't you be my neighbor]
+
+Test: "It should cycle through each element of the array and replace any 2's with "boop".
 Code: wordReplacer("13");
 Expected Output: [1, Won't you be my neighbor]
