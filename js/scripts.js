@@ -40,9 +40,9 @@ window.addEventListener("load", function(){
     const number = document.getElementById("text-input1").value;
     let test = wordReplacer(number);
     let div = document.createElement("div");
-    let p = document.createElement("p");
+    let p = document.getElementById("first");
     let text = document.createTextNode(test);
-
+    p.textContent = '';
     p.appendChild(text);
     let divTag = document.getElementById("results");
     divTag.appendChild(p);
