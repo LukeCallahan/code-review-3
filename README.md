@@ -1,25 +1,58 @@
-* scope
-1. create simple form that inputs a number and returns a string so we can start processing it with our business logic.
 
-** Begin Testing 
-
-2. [complete] Create an array and Convert the string to individual elements of the array.
-
-3. Cycle through each element of the array, and if it has a 1, 2, or 3, do the following:
- If it has a 3, replace it with: "Won't you be my neighbor"
- If it has a 2, replace it with: "Boop"
- If it has a 1, replace it with: "Beep"
-
-4. Now, put all of the pieces of the array back together 
-
-5. Now, append the results to an existing element in the html so it can be displayed to the user.
-
-6. Add logic so that the form resets upon loading
-
-7. Add logic so the results will be removed when the form is submitted again.
+# WORD CONVERTER
 
 
-* Tests 
+#### Developed by: Luke Callahan
+
+
+## Description 
+A simple project showcasing javascript looping and basic html input and output.
+
+
+## Technologies Used
+- Html
+- Javascript
+- Test Driven Development (see below for tests)
+
+## Setup Instructions
+
+1. <pre>git clone https://github.com/LukeCallahan/code-review-3</pre>
+2. Open index.html in your browser of choice.
+
+## Known Bugs
+- It currently displays a comma before the zero. 
+
+Areas of improvement are as follows:
+- Add bootstrap and improve formatting.
+
+### License & Copyright
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+### Date
+Copyright (c) _October 2022_ _Luke Callahan_
+
+
+ 
+## TESTS
 
 Describe: wordReplacer()
 
@@ -39,11 +72,9 @@ Test: "It should cycle through each element of the array and replace any 1's wit
 Code: wordReplacer("13");
 Expected Output: [1, "beep"]
 
-
 Test: "It should take the number and modify the array so it include 0 through the input number".
 Code: wordReplacer("9");
 Expected Output: [0,1,2,3,4,5,6,7,8,9]
-
 
 Test: "It should display each element of the array to the console.".
 Code: wordReplacer(14);
