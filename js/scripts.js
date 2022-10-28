@@ -6,28 +6,18 @@ function wordReplacer(number){
   let stringArray = [0]; 
   let arrayElement = 0;
 
-  
   for (let i=1; i < inputNumber + 2; i += 1){
     arrayElement += 1;
     stringArray[i] = arrayElement -1;
   };
 
-  //Okay so here, stringArray has our entire array of numbers from 0 to 14. It says it is undefined.
-  // So from here we want to take this array, iterate through it, then, on each Element, we want to split it into it's own array, determine it's length, and if it has a 1, 2, or 3, in it, perform a function.
-
-
-
-
-
-
-  // stringArray = number.split("");
-  for (let i = 0; i < stringArray.length; i += 1){
+  for (let i = 1; i < stringArray.length; i += 1){
     if (stringArray[i].toString().includes("3")){
       stringArray[i] = "Won't you be my neighbor?";
     } else if (stringArray[i].toString().includes("2")){
-      stringArray[i] = "Boop";
+      stringArray[i] = "Boop!";
     } else if (stringArray[i].toString().includes("1")){
-      stringArray[i] = "Beep";
+      stringArray[i] = "Beep!";
     }
     console.log(stringArray[i]);
   };
