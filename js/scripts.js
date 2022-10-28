@@ -13,11 +13,11 @@ function wordReplacer(number){
 
   for (let i = 1; i < stringArray.length; i += 1){
     if (stringArray[i].toString().includes("3")){
-      stringArray[i] = "Won't you be my neighbor?";
+      stringArray[i] = ' "Won\'t you be my neighbor?"';
     } else if (stringArray[i].toString().includes("2")){
-      stringArray[i] = "Boop!";
+      stringArray[i] = ' "Boop!"';
     } else if (stringArray[i].toString().includes("1")){
-      stringArray[i] = "Beep!";
+      stringArray[i] = ' "Beep!"';
     }
     console.log(stringArray[i]);
   };
@@ -38,7 +38,7 @@ window.addEventListener("load", function(){
   form.addEventListener("submit", function(event){
     event.preventDefault();
     const number = document.getElementById("text-input1").value;
-    let test = wordReplacer(number);
+    let test = wordReplacer(number).join(', ');
     let div = document.createElement("div");
     let p = document.getElementById("first");
     let text = document.createTextNode(test);
