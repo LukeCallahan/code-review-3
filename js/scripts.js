@@ -3,9 +3,7 @@
 //Business Logic
 function wordReplacer(number){
   let stringArray = number.split("");
-  return stringArray;
-
-
+ 
 }
 
 
