@@ -4,11 +4,11 @@ function wordReplacer(number){
   let stringArray = []; 
   let arrayElement = 0;
   
-  for (let i = 1; i < inputNumber + 2; i += 1){
+  for (let i = 0; i < inputNumber + 2; i += 1){
     arrayElement += 1;
-    stringArray[i] = arrayElement -1;
+    stringArray[i] = arrayElement - 1;
   };
-
+  
   for (let i = 1; i < stringArray.length; i += 1){
     if (stringArray[i].toString().includes("3")){
       stringArray[i] = '"Won\'t you be my neighbor?"';
@@ -18,7 +18,6 @@ function wordReplacer(number){
       stringArray[i] = '"Beep!"';
     }
   };
-  
   return stringArray;
 }
 
@@ -33,7 +32,7 @@ window.addEventListener("load", function(){
     let p = document.getElementById("first");
     let text = document.createTextNode(test);
     let divTag = document.getElementById("results");
-    
+
     event.preventDefault();
     p.textContent ='';
     p.appendChild(text);
