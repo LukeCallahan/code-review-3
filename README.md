@@ -72,7 +72,7 @@ Test: "It should cycle through each element of the array and replace any 1's wit
 Code: wordReplacer("13");
 Expected Output: [1, "beep"]
 
-Test: "It should take the number and modify the array so it include 0 through the input number".
+Test: "It should take the number and modify the array so it includes 0 through the input number".
 Code: wordReplacer("9");
 Expected Output: [0,1,2,3,4,5,6,7,8,9]
 
