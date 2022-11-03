@@ -24,19 +24,16 @@ function wordReplacer(number){
 //User Interface Logic
 window.addEventListener("load", function(){
   let form = document.querySelector("form");
-  let result = document.getElementById("results");
 
   form.addEventListener("submit", function(event){
     const number = document.getElementById("text-input1").value;
     let test = wordReplacer(number).join(', ');
     let p = document.getElementById("first");
     let text = document.createTextNode(test);
-    let divTag = document.getElementById("results");
 
     event.preventDefault();
     p.textContent ='';
     p.appendChild(text);
-    divTag.appendChild(p);
     form.reset();
   });
 });
